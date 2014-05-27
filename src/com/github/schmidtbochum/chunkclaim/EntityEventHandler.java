@@ -98,7 +98,8 @@ public class EntityEventHandler implements Listener {
 			blocks.remove(i--);
 		}
 	}
-	
+
+/* - These lines cause items not to drop when Mining (i.e. in survival mode)	
 	//when an item spawns...
 	@EventHandler(priority = EventPriority.LOWEST)
 	public void onItemSpawn(ItemSpawnEvent event) {
@@ -118,6 +119,8 @@ public class EntityEventHandler implements Listener {
 			event.setCancelled(true);
 		}
 	}
+*/
+
 
 	//when an experience bottle explodes...
 	@EventHandler(priority = EventPriority.LOWEST)
